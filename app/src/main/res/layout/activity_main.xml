@@ -13,24 +13,26 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="30dp"
         android:text="Login"
         android:textSize="50sp" />
 
     <EditText
+        android:id="@+id/Email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginHorizontal="10dp"
-        android:layout_marginVertical="20dp"
+        android:layout_marginHorizontal="15dp"
+        android:layout_marginTop="25dp"
         android:background="@drawable/bg_et_login"
         android:drawableStart="@drawable/baseline_alternate_email_24"
         android:hint="Enter Email"
         android:textSize="20sp" />
 
     <EditText
+        android:id="@+id/Password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:layout_marginHorizontal="10dp"
+        android:layout_marginHorizontal="15dp"
         android:layout_marginVertical="15dp"
         android:background="@drawable/bg_et_login"
         android:drawableEnd="@drawable/baseline_remove_red_eye_24"
@@ -48,6 +50,7 @@
 
 
     <Button
+        android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
