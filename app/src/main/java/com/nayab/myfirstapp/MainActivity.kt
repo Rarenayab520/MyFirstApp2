@@ -1,6 +1,7 @@
 package com.nayab.myfirstapp
 
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -31,10 +32,15 @@ class MainActivity : AppCompatActivity() {
 
             var useremail=email.text.toString()
             var userpassword=password.text.toString()
+            //for email checking
             if (useremail=="nayab@gmail.com")
             {
+                //for password checking
                 if (userpassword=="123")
                 {
+                    //for new screen opening after login
+                    var intent= Intent(this@MainActivity , Activity_card_view :: class.java)
+                    startActivity(Intent)
                     Toast.makeText(this@MainActivity,"Login Successfully", Toast.LENGTH_SHORT).show()
                 }
                 else
@@ -44,7 +50,7 @@ class MainActivity : AppCompatActivity() {
             }
             else
             {
-                Toast.makeText(this@MainActivity,"OPSSS....!!Account not Created...", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this@MainActivity,"OPSSS....!! Account not Created...", Toast.LENGTH_SHORT).show()
             }
 
 
