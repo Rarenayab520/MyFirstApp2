@@ -39,8 +39,8 @@ class MainActivity : AppCompatActivity() {
                 if (userpassword=="123")
                 {
                     //for new screen opening after login
-                    var intent= Intent(this@MainActivity , Activity_card_view :: class.java)
-                    startActivity(Intent)
+                    var Intent= Intent(this@MainActivity , Activity_card_view :: class.java)
+                    startActivity( Intent)
                     Toast.makeText(this@MainActivity,"Login Successfully", Toast.LENGTH_SHORT).show()
                 }
                 else
