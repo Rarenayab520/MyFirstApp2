@@ -14,6 +14,7 @@
         android:layout_height="50dp"
         android:text="Logout"
         android:textColor="@color/white"
+        app:rippleColor="@color/white"
         android:textStyle="bold"
         android:textSize="17sp"
         app:icon="@drawable/male_1364_svgrepo_com"
