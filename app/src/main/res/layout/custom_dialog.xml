@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <EditText
+        android:id="@+id/et_new_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:hint="Enter New Password"
+        android:inputType="textPassword"
+        android:textColorHint="#383737"
+        android:textColor="@color/black"
+        android:background="#ECECEC"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/et_confirm_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Confirm Password"
+        android:textColorHint="#383737"
+        android:textColor="@color/black"
+        android:inputType="textPassword"
+        android:background="#ECECEC"
+        android:padding="10dp"
+        android:textSize="16sp" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/bt_reset_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Reset Password"
+        android:backgroundTint="#6018AD"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+</LinearLayout>
