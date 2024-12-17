@@ -11,6 +11,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.bottomsheet.BottomSheetDialog
 import com.google.android.material.button.MaterialButton
 
 class ActivityLogout : AppCompatActivity() {
@@ -27,7 +28,7 @@ class ActivityLogout : AppCompatActivity() {
         btlogout.setOnClickListener()
         {
             var dialog=Dialog(this@ActivityLogout)
-            dialog.setCancelable(false)
+            dialog.setCancelable(true)
             dialog.window?.setBackgroundDrawable(ColorDrawable(Color.TRANSPARENT))
             dialog.requestWindowFeature(Window.FEATURE_NO_TITLE)
 
