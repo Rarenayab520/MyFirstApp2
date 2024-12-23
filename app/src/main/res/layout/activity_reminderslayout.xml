@@ -1,35 +1,427 @@
-<LinearLayout
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#000000"
-    android:orientation="vertical"
-    android:padding="16dp"
+    android:background="@color/black"
     tools:context=".ActivityReminderslayout">
-    <!-- Search Bar -->
-    <EditText
-        android:id="@+id/searchBar"
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cardview1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#52545D"
+        app:cardElevation="10dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <ImageView
+        android:layout_marginTop="7dp"
+        android:layout_width="34dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="5dp"
+        android:src="@drawable/search_svgrepo_com"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Search"
+        android:layout_marginTop="5dp"
+        android:textColor="#C5BEBE"
+        android:textSize="20sp" />
+        <ImageView
+            android:layout_marginTop="7dp"
+            android:layout_width="34dp"
+            android:layout_height="34dp"
+            android:layout_marginLeft="230dp"
+            android:src="@drawable/microphone_svgrepo_com__1_"/>
+
+    </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview2"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Cardview1"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#52545D"
+        app:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/today"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/calendar_svgrepo_com"/>
+            <TextView
+                android:id="@+id/Zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/today"
+                android:layout_marginLeft="100dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/Today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Zero"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="3dp"
+                android:text="Today"
+                android:textSize="25dp"
+                android:textColor="#C5BEBE"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview3"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/Cardview1"
+        android:layout_toRightOf="@+id/cardview2"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#52545D"
+        app:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Calender"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/calendar_svgrepo_com"/>
+            <TextView
+                android:id="@+id/One"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/Calender"
+                android:layout_marginLeft="100dp"
+                android:text="1"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/Schedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/One"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="3dp"
+                android:text="Scheduled"
+                android:textSize="25dp"
+                android:textColor="#C5BEBE"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview4"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cardview2"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#52545D"
+        app:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/all"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/all_svgrepo_com"/>
+            <TextView
+                android:id="@+id/one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/all"
+                android:layout_marginLeft="100dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/ALL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/one"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="3dp"
+                android:text="All"
+                android:textSize="25dp"
+                android:textColor="#C5BEBE"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview5"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cardview2"
+        android:layout_toRightOf="@+id/cardview4"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="27dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#52545D"
+        app:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/Flag"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/flag_2_svgrepo_com"/>
+            <TextView
+                android:id="@+id/zero"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@+id/Flag"
+                android:layout_marginLeft="100dp"
+                android:text="0"
+                android:textStyle="bold"
+                android:textSize="35dp"
+                android:textColor="@color/white"/>
+            <TextView
+                android:id="@+id/Flagged"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/zero"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="3dp"
+                android:text="Flagged"
+                android:textSize="25dp"
+                android:textColor="#C5BEBE"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview6"
+        android:layout_width="175dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/cardview4"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="15dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#52545D"
+        app:cardElevation="10dp">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/tick"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="5dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/tick_circle_svgrepo_com"/>
+
+            <TextView
+                android:id="@+id/Completed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="60dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginBottom="3dp"
+                android:text="Completed"
+                android:textSize="25dp"
+                android:textColor="#C5BEBE"/>
+
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Icloud"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cardview6"
+        android:text="iCloud"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:textColor="@color/white"/>
+    <ImageView
+        android:layout_below="@+id/cardview6"
+        android:layout_toRightOf="@+id/Icloud"
+        android:layout_marginTop="13dp"
+        android:layout_marginStart="270dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow_down_svgrepo_com"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cardview7"
+        android:layout_below="@+id/Icloud"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:background="#312F2F"
-        android:hint="Search"
-        android:paddingStart="16dp"
-        android:paddingEnd="16dp"
-        android:textColor="#FFFFFF"
-        android:textColorHint="#AAAAAA"
-        android:drawablePadding="8dp" />
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#52545D"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_width="36dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/all_accounts_svgrepo_com"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reminders"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:layout_marginTop="7dp"
+               android:layout_marginStart="160dp"
+               android:text="1 >"
+               android:textColor="#C5BEBE"
+               android:textSize="28sp"
+               android:textStyle="bold"/>
+        </LinearLayout>
 
-    <!-- Grid Layout for Cards -->
-    <androidx.gridlayout.widget.GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="match_parent"
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/Outlook"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:padding="16dp"
-        android:columnCount="2">
+        android:layout_below="@id/Cardview7"
+        android:text="Outlook"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"/>
+    <ImageView
+        android:layout_below="@+id/Cardview7"
+        android:layout_toRightOf="@+id/Outlook"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="260dp"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:src="@drawable/arrow_down_svgrepo_com"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Cardview8"
+        android:layout_below="@+id/Outlook"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginHorizontal="15dp"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#52545D"
+        app:cardElevation="10dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_marginTop="7dp"
+                android:layout_width="36dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="10dp"
+                android:src="@drawable/reminders_notes_list_menu_svgrepo_com"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tasks"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/white"
+                android:textSize="25sp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_marginStart="210dp"
+                android:text="0 >"
+                android:textColor="#C5BEBE"
+                android:textSize="28sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
 
-    </androidx.gridlayout.widget.GridLayout>
+    </androidx.cardview.widget.CardView>
+    <ImageView
+
+        android:layout_below="@id/Cardview8"
+        android:layout_marginTop="45dp"
+        android:layout_width="36dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/plus_circle_svgrepo_com"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Cardview8"
+        android:layout_marginStart="50dp"
+        android:text="New Reminder"
+        android:textStyle="bold"
+        android:textColor="#2196F3"
+        android:layout_marginTop="45dp"
+        android:textSize="25sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Cardview8"
+        android:layout_marginStart="310dp"
+        android:text="Add list"
+        android:textColor="#2196F3"
+        android:layout_marginTop="45dp"
+        android:textSize="25sp"/>
 
 
-</LinearLayout>
+</RelativeLayout>
