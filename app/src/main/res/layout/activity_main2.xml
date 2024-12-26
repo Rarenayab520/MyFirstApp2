@@ -76,7 +76,7 @@
             android:animateLayoutChanges="true"
             >
 
-            <!-- Card 1 - Today -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardview2"
                 android:layout_width="0dp"
@@ -125,7 +125,7 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Card 2 - Scheduled -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardview3"
                 android:layout_width="0dp"
@@ -173,7 +173,7 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Card 3 - All -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardview4"
                 android:layout_width="0dp"
@@ -222,7 +222,7 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Card 4 - Flagged -->
+
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardview5"
                 android:layout_width="0dp"
@@ -271,7 +271,6 @@
                 </RelativeLayout>
             </androidx.cardview.widget.CardView>
 
-            <!-- Card 5 - Completed -->
             <androidx.cardview.widget.CardView
                 android:id="@+id/cardview6"
                 android:layout_width="0dp"
