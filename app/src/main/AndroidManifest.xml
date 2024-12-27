@@ -17,21 +17,23 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="false" />
-        <activity
-            android:name=".ActivityAssShayan"
-            android:exported="false" />
+            android:exported="true" >
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+
+        </activity>
+
         <activity
             android:name=".ActivityReminderslayout"
             android:exported="false" />
         <activity
             android:name=".ActivitySplash"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".ActivityLogout"
