@@ -76,6 +76,7 @@
         android:layout_height="50dp"
         android:layout_marginHorizontal="20dp"
         android:text="SIGNUP"
+        android:textSize="20sp"
         android:textColor="@color/white"
         app:cornerRadius="1dp"
         android:backgroundTint="#0C2192"/>
@@ -111,6 +112,7 @@
         android:layout_marginHorizontal="20dp"
         android:text="SignUp with FACEBOOK"
         android:textColor="@color/white"
+        android:textSize="20sp"
         app:cornerRadius="1dp"
         android:backgroundTint="#0C2192"/>
     <Button
