@@ -9,7 +9,7 @@
     android:animateLayoutChanges="true"
     tools:context=".MainActivity2">
 
-
+    <!-- REMINDER APP HOME SCREEN  -->
     <FrameLayout
         android:id="@+id/Bar"
         android:layout_width="match_parent"

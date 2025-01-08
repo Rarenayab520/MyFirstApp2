@@ -7,7 +7,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ActivityBtScan_devices">
-
+    <!-- Scan devices -->
     <androidx.cardview.widget.CardView
         android:id="@+id/Cardview1"
         android:layout_width="match_parent"
