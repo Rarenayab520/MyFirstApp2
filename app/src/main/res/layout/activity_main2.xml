@@ -343,6 +343,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="Reminders"
+                android:textStyle="bold"
                 android:textSize="20sp"
                 android:padding="4dp"
                 android:textColor="@color/white"
@@ -389,6 +390,7 @@
             android:layout_weight="1"
             android:text="Tasks"
             android:textSize="20sp"
+            android:textStyle="bold"
             android:padding="4dp"
             android:textColor="@color/white"
             android:drawableStart="@drawable/tasks_icon"
@@ -422,7 +424,7 @@
         android:layout_marginStart="4dp"
         android:text="New Reminder"
         android:textStyle="bold"
-        android:textColor="#2196F3"
+        android:textColor="#213AF3"
         android:layout_marginTop="30dp"
         android:textSize="25sp"/>
     <TextView
@@ -431,7 +433,7 @@
         android:layout_below="@id/linear3"
         android:layout_marginStart="310dp"
         android:text="Add list"
-        android:textColor="#2196F3"
+        android:textColor="#213AF3"
         android:layout_marginTop="30dp"
         android:textSize="25sp"/>
 
