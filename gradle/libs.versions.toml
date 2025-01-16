@@ -12,8 +12,10 @@ constraintlayout = "2.2.0"
 navigationFragmentKtx = "2.6.0"
 navigationUiKtx = "2.6.0"
 androidx-gridlayout = "1.0.0"
+cardview = "1.0.0"
 
 [libraries]
+androidx-cardview = { group = "androidx.cardview", name = "cardview", version.ref = "cardview" }
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
