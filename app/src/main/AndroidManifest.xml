@@ -13,28 +13,26 @@
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
         <activity
+            android:name=".RecyclerviewActtivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivityPasswords"
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
-
         <activity
             android:name=".ActivityReminderslayout"
             android:exported="false" />
         <activity
             android:name=".ActivitySplash"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ActivityLogout"
             android:exported="true" />
