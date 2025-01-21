@@ -1,5 +1,6 @@
 package com.nayab.myfirstapp
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,8 +23,10 @@ class Adapter(var listUser:ArrayList<ModelUser>):RecyclerView.Adapter<Adapter.Us
         var message=itemView.findViewById<TextView>(R.id.message_preview)
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
-     var itemView=LayoutInflater.from(parent.context).inflate(R.layout.i.parent,)
+     var itemView=LayoutInflater.from(parent.context).inflate(R.layout.recyclerview,parent,false)
+        return UserViewHolder(itemView)
     }
 
     override fun getItemCount(): Int {
@@ -31,7 +34,8 @@ class Adapter(var listUser:ArrayList<ModelUser>):RecyclerView.Adapter<Adapter.Us
     }
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
-     holder.username.text=
+     holder.username.text=listUser[position].username
+        holder.message.text=listUser[position].message
     }
 
 }
