@@ -1,4 +1,4 @@
 package com.nayab.myfirstapp
 
-class ModelUser(var username:String = "",var message:String = "") {
+class ModelUser(var email:String = "",var password:String = "") {
 }

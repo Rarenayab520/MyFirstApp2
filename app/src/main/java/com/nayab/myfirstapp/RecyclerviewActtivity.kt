@@ -37,6 +37,6 @@ class RecyclerviewActtivity : AppCompatActivity(), Adapter.itemclicklistner {
 
     override fun itemclick(modelUser: ModelUser) {
         //Toast.makeText(this@RecyclerviewActtivity,modelUser.username, Toast.LENGTH_SHORT).show()
-        startActivity(Intent(this@RecyclerviewActtivity,Activity_card_view::class.java).putExtra("Name",modelUser.username).putExtra("Msg",modelUser.message))
+        startActivity(Intent(this@RecyclerviewActtivity,Activity_card_view::class.java).putExtra("Name",modelUser.email).putExtra("Password",modelUser.password))
     }
 }

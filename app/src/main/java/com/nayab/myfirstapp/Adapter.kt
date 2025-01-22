@@ -39,8 +39,9 @@ class Adapter(var listUser:ArrayList<ModelUser>,var listner:itemclicklistner):Re
     }
 
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
-     holder.username.text=listUser[position].username
-        holder.message.text=listUser[position].message
+    // holder.username.text=listUser[position].username
+       // holder.message.text=listUser[position].message
+        holder.message.text=listUser[position].email
         holder.layuser.setOnClickListener()
         {
             listner.itemclick(listUser[position])
