@@ -1,6 +1,8 @@
 package com.nayab.myfirstapp
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -8,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
-class RecyclerviewActtivity : AppCompatActivity() {
+class RecyclerviewActtivity : AppCompatActivity(), Adapter.itemclicklistner {
     private  lateinit var rvUser:RecyclerView
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -23,13 +25,18 @@ class RecyclerviewActtivity : AppCompatActivity() {
         listUser.add(ModelUser("Noob", "Alhamdulilah"))
         listUser.add(ModelUser("Rare", "How are you?"))
         rvUser.layoutManager=LinearLayoutManager(this@RecyclerviewActtivity)
-        rvUser.adapter=Adapter(listUser)
+        rvUser.adapter=Adapter(listUser,this@RecyclerviewActtivity)
+
         //1 Recycler view
         //2 item design
         //3  list->type(class) pass-> Adapter
         //4 rv frontend layout
         //5 list pass Adapter set
         //6 Adapter class ->oncreateviewholder(viewholder)  onbindviewholder(data set ) item getcount
+    }
 
+    override fun itemclick(modelUser: ModelUser) {
+        //Toast.makeText(this@RecyclerviewActtivity,modelUser.username, Toast.LENGTH_SHORT).show()
+        startActivity(Intent(this@RecyclerviewActtivity,Activity_card_view::class.java).putExtra("Name",modelUser.username).putExtra("Msg",modelUser.message))
     }
 }
