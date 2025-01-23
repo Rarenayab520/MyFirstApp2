@@ -21,23 +21,24 @@ class Adapter(var listUser:ArrayList<ModelUser>,var listner:itemclicklistner):Re
     {
         fun itemclick(modelUser: ModelUser)
     }
+    //point 1
     inner class UserViewHolder(itemView: View):RecyclerView.ViewHolder(itemView)
     {
         var username=itemView.findViewById<TextView>(R.id.user_name)
         var message=itemView.findViewById<TextView>(R.id.message_preview)
         var layuser=itemView.findViewById<LinearLayout>(R.id.itemuser)
     }
-
+   //point 2
     @SuppressLint("SuspiciousIndentation")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): UserViewHolder {
      var itemView=LayoutInflater.from(parent.context).inflate(R.layout.recyclerview,parent,false)
         return UserViewHolder(itemView)
     }
-
+   // point 5
     override fun getItemCount(): Int {
      return listUser.size
     }
-
+   //point 3
     override fun onBindViewHolder(holder: UserViewHolder, position: Int) {
     // holder.username.text=listUser[position].username
        // holder.message.text=listUser[position].message

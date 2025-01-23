@@ -9,7 +9,7 @@ import androidx.core.view.WindowInsetsCompat
 import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.firestore.remote.FirebaseClientGrpcMetadataProvider
 import com.nayab.myfirstapp.databinding.ActivitySignup2Binding
-
+//online database firebase data addition
 class ActivitySignup2 : AppCompatActivity() {
     private lateinit var binding:ActivitySignup2Binding
     private val database = FirebaseFirestore.getInstance()
@@ -26,7 +26,7 @@ class ActivitySignup2 : AppCompatActivity() {
            var modelUser=ModelUser()
            modelUser.email=Email.text.toString()
            modelUser.password=Password.text.toString()
-
+          //Database collection name
            database.collection("Username").add(modelUser)
                .addOnSuccessListener {
                    Toast.makeText(this@ActivitySignup2, "Account created Successfully", Toast.LENGTH_SHORT).show()
