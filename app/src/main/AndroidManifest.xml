@@ -13,10 +13,11 @@
         android:theme="@style/Theme.MyFirstApp"
         tools:targetApi="31">
         <activity
+            android:name=".PLaybackActivity"
+            android:exported="false" />
+        <activity
             android:name=".ActivitySignup2"
-            android:exported="true" >
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".RecyclerviewActtivity"
             android:exported="true">
@@ -31,15 +32,13 @@
             android:exported="false" />
         <activity
             android:name=".MainActivity2"
-            android:exported="true">
-
-        </activity>
+            android:exported="true"></activity>
         <activity
             android:name=".ActivityReminderslayout"
             android:exported="false" />
         <activity
             android:name=".ActivitySplash"
-            android:exported="true"></activity>
+            android:exported="true" />
         <activity
             android:name=".ActivityLogout"
             android:exported="true" />
