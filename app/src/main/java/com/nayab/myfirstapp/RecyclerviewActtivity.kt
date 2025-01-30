@@ -21,7 +21,7 @@ class RecyclerviewActtivity : AppCompatActivity(), Adapter.itemclicklistner {
         enableEdgeToEdge()
         setContentView(R.layout.activity_recyclerview_acttivity)
         rvUser=findViewById(R.id.rvUsers)
-        //Retrive data from firebase
+
         btnGetdata=findViewById(R.id.btnGetdata)
         var listUser=ArrayList<ModelUser>()
         btnGetdata.setOnClickListener()
