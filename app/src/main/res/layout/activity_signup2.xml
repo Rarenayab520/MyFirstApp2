@@ -9,6 +9,7 @@
     android:orientation="vertical"
     android:background="@drawable/img"
     tools:context=".ActivitySignup2">
+
     <TextView
 
         android:layout_width="wrap_content"
