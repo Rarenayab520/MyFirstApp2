@@ -118,7 +118,7 @@
         android:layout_marginVertical="20dp"
         android:layout_width="170dp"
         android:layout_height="170dp"
-        android:src="@drawable/transparent_play_button_icon_1"/>
+        android:src="@drawable/play_button_svgrepo_com__1_"/>
     <TextView
         android:id="@+id/disableScreenLock"
         android:layout_width="wrap_content"
