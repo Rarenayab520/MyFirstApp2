@@ -8,7 +8,7 @@
     android:layout_height="match_parent"
     android:background="#111F2C"
     tools:context=".PLaybackActivity">
-    <!-- Play back activity -->
+
 
     <TextView
         android:id="@+id/timeframe"
