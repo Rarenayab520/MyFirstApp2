@@ -16,7 +16,7 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Select Time Frame"
+        android:text="Select TIME Frame"
         android:textColor="#81848A"
         android:textSize="26dp"
          />
