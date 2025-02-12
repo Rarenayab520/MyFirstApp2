@@ -16,9 +16,9 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="Select TIME Frame"
+        android:text="SELECT TIME FRAME"
         android:textColor="#81848A"
-        android:textSize="26dp"
+        android:textSize="24dp"
          />
     <LinearLayout
         android:id="@+id/linear_layout1"
@@ -37,7 +37,7 @@
             android:text="Start Time"
             android:textAlignment="center"
             android:textColor="#81848A"
-            android:textSize="23sp" />
+            android:textSize="24sp" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -47,7 +47,7 @@
             android:text="End Time"
             android:textAlignment="center"
             android:textColor="#81848A"
-            android:textSize="23sp" />
+            android:textSize="24sp" />
 
     </LinearLayout>
     <LinearLayout
